@@ -1,12 +1,17 @@
 import random
 
+
 def guess():
     r = random.randint(0,10)
+    max_number = 10
     total_chances = 10
 
     while True:
         i = int(input("Guess the number between 0 and 10: "))
 
+        if i > max_number:
+            print("You introduced a invalid number, try again!")
+            return
 
         if i == r:
             print("You guessed! Nice!")
@@ -24,7 +29,6 @@ def guess():
             break
 
         print(f"You have {total_chances} left!")
-
 
 
 guess()
