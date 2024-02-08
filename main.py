@@ -6,6 +6,7 @@ def guess():
     max_number = 10
     total_chances = 10
 
+
     while True:
         i = int(input("Guess the number between 0 and 10: "))
 
