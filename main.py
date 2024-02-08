@@ -12,7 +12,7 @@ def guess():
 
         if i > max_number:
             print("You introduced a invalid number, try again!")
-            return
+            break
 
         if i == r:
             print("You guessed! Nice!")
